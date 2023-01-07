@@ -1,0 +1,17 @@
+Generic single-database configuration.
+
+
+# Create new revision
+```
+alembic revision -m "create account table"
+```
+
+# Create Auto generate revision
+```
+alembic revision --autogenerate -m "add events table"
+```
+
+# Run Migration
+```
+alembic upgrade head
+```

@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "weather_api"
+version = "1.0.0"
+description = "Weather API"
+authors = ["Masoud Mazarei <msd.mazarei@gmail.com>"]
+readme = "README.md"
+
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.88.0"
+sqlalchemy = "^1.4.46"
+uvicorn = "^0.20.0"
+alembic = "^1.9.1"
+pydantic = "^1.10.4"
+psycopg2 = "^2.9.5"
+pytest = "^7.2.0"
+asyncpg = "^0.27.0"
+pytest-asyncio = "^0.20.3"
+loguru = "^0.6.0"
+loguru-mypy = "^0.0.4"
+faker = "^15.3.4"
+pylint = "^2.15.9"
+python-keycloak = "^2.8.0"
+python-dotenv = "^0.21.0"
+pylru = "^1.2.1"
+httpx = "^0.23.3"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.11.4"
+black = "^22.12.0"
+mypy = "^0.991"
+autoflake = "^2.0.0"
+flake8 = "^6.0.0"
+pytest-cov = "^4.0.0"
+sqlalchemy-stubs = "^0.4"
+sqlalchemy2-stubs = "^0.0.2a31"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
